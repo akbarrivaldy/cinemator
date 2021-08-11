@@ -11,3 +11,30 @@
 .btn-primary {
   @apply bg-purple-800 text-gray-200 hover:bg-purple-900;
 }
+
+.btn-secondary {
+  @apply bg-gray-800 text-gray-200 hover:bg-gray-900;
+}
+
+/* Custom CSS */
+#nav-mobile {
+  animation: nav-open .5s ease;
+}
+@keyframes nav-open {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#hero-img {
+  transform: perspective(0) rotateX(0);
+  transition: .3s;
+}
+
+#hero-img:hover {
+  transform: perspective(500px) rotateY(-10deg);
+  transition: .3s;
+}
