@@ -29,7 +29,7 @@ function App() {
             <div className="py-2 px-4 hover:bg-gray-600 lg:hidden cursor-pointer" onClick={() => { setIsOpen(!isOpen) }}>
               <i className="fas fa-bars text-lg text-gray-200"></i>
             </div>
-            <div id="nav-mobile" className={ `${isOpen ? 'fixed' : 'hidden'} lg:hidden top-0 right-0 left-0 bottom-0 bg-gray-800` }>
+            <div id="nav-mobile" className={ `${isOpen ? 'fixed' : 'hidden'} lg:hidden top-0 right-0 left-0 bottom-0 bg-gray-800 z-20` }>
               <div className="container flex flex-col h-full justify-between">
                 <div className="flex justify-end mt-4">
                   <div className="py-2 px-4 hover:bg-gray-600 cursor-pointer" onClick={() => { setIsOpen(!isOpen) }}>
