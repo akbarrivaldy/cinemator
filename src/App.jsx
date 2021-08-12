@@ -26,7 +26,7 @@ function App() {
                 <div className="btn btn-primary">Download</div>
               </Link>
             </div>
-            <div className="py-2 px-4 hover:bg-gray-600 lg:hidden cursor-pointer" onClick={() => { setIsOpen(!isOpen) }}>
+            <div className="py-2 px-4 bg-gray-600 lg:hidden cursor-pointer" onClick={() => { setIsOpen(!isOpen) }}>
               <i className="fas fa-bars text-lg text-gray-200"></i>
             </div>
             <div id="nav-mobile" className={ `${isOpen ? 'fixed' : 'hidden'} lg:hidden top-0 right-0 left-0 bottom-0 bg-gray-800 z-20` }>
