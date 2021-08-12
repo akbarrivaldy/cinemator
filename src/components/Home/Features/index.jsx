@@ -30,19 +30,20 @@ export default function Features() {
       text: 'Create new worlds by layering clips, applying blending modes, and changing your backgrounds with chroma-key (green screen).',
       image: image4
     },
-    {
-      title: 'Create Without Limits',
-      text: 'Discover infinite ways to express yourself. Achieve a refined look with endless effects.',
-      image: image5
-    },
   ]
+
+  const featuresSingle = {
+    title: 'Create Without Limits',
+    text: 'Discover infinite ways to express yourself. Achieve a refined look with endless effects. Make your own movie and make it a masterpiece, Cinemator is made for aspiring legends.',
+    image: image5
+  }
 
   return (
     <section className="bg-white">
       <div className="container py-8 flex flex-col justify-center items-center text-center">
         <h1 className="text-2xl font-bold text-center mb-2">Ready for anything</h1>
         { features.map((feature, index) => (
-          <div className="w-full sm:w-1/2 my-2">
+          <div className="w-full sm:w-1/2 md:w-2/3 my-2">
             <FeaturesCard 
               id={index}
               title={feature.title} 
@@ -52,7 +53,7 @@ export default function Features() {
           </div>
         )) }
       </div>
-      <FeatureSingle title={features[4].title} text={features[4].text} image={features[4].image} />
+      <FeatureSingle title={featuresSingle.title} text={featuresSingle.text} image={featuresSingle.image} />
     </section>
   )
 }
